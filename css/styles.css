@@ -3,7 +3,7 @@ html, body {
 	padding: 0px;
 	width: 100vw;
 	min-height: 100vh;
-	font-family: 'Lato', sans-serif;
+	font-family: Consolas,monaco,monospace;
 }
 
 p {
@@ -35,6 +35,129 @@ h1 {
   transform: translate(-50%, -50%);
   z-index: 2;
   width: 80%;
-  padding: 40px;
+  padding: 20px;
   text-align: center;
+}
+
+.section{
+	margin: 0 auto;
+	top: 0;
+	overflow: hidden;
+	padding-right: 200px;
+	padding-left: 200px;
+  background: transparent;
+  overflow: hidden;
+}
+#terminal {
+  margin-top: 0px;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px;
+}
+.window-welcome h1 {
+	font-size: 21px;
+}
+
+.window-welcome {
+  border:2px solid black;
+  background: #262626;
+  color: #f8f8f8;
+  padding: 50px;
+  box-shadow: 2px 2px 0px #fff;
+  background: #090a0f;
+}
+
+.clr{
+  clear: both;
+  padding: 0;
+  height: 0;
+  margin: 0;
+}
+.window {
+  border:2px solid black;
+  padding:6px 6px 6px 6px;
+  background:lightgrey;
+  box-shadow:2px 2px 0px black, inset 2px 2px 0px #fff;
+}
+
+.window-header {
+  margin-bottom:6px;
+  background:lightgrey;
+}
+
+.window-header{
+  background-size: 100% 2px;
+  text-align:center;
+}
+.window-header span{
+  margin:auto 0;
+  background:lightgrey;
+  text-align:center;
+  padding:0px 6px 2px 6px;
+  top:0px;
+  font-family: Consolas, monaco;
+  letter-spacing:0.01em; 
+  font-size: 15px;
+}
+#terminal {
+  margin-top: 0px;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px;
+ }
+ .logo {
+  background: lightgrey;
+}
+.logo:hover {
+  background: #b7b7b7;
+}
+.navigation {
+position: fixed;
+margin: 0 auto;
+width: 100%;
+color: #262626;
+z-index: 9;
+bottom: 0;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.navlink {
+  color: #262626;
+  text-decoration: none;
+  padding: 5px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  border:2px solid black;
+  background: lightgrey;
+  box-shadow:2px 2px 0px black, inset 2px 2px 0px #fff;
+}
+.navlink:hover {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: ease 0.5s;
+  border:2px solid black;
+  background: #b7b7b7;
+  box-shadow:2px 2px 0px black, inset 2px 2px 0px #fff;
+}
+.navlink.active {
+  color: #262626;
+  background-color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border:2px solid black;
+  background: #969696;
+  box-shadow:2px 2px 0px black, inset 2px 2px 0px #fff;
 }

@@ -8,16 +8,43 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <link rel="stylesheet" href="css/styles.css"> 
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,600,700" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 </head>
   <body>
-    <div class="bottom-menu"></div>
+    <a class="logo animated shake" href="#terminal"><div class="window logo">Filip Handzel
+    </div>
+    </a>
+
+    <nav class="navigation" id="mainNav">
+                <a class="navlink" href="#terminal">Terminal</a>
+                <a class="navlink" href="#about-us">Projects</a>
+                <a class="navlink" href="#our-team">My skills</a>
+                <a class="navlink" href="#projects">Contact</a>
+    </nav>
+
     <div class="container-main">
-      <div class="about-me">
-      <h1>Jestem Filip, Filip Handzel</h1>
-      <p>Zwą mnie front-end'owcem.</p>
-</div>
+          <div class="section" id="terminal" data-hash="terminal">
+            <div class="window" id="home">
+                <div class="window-header"><span>CV_portfolio —— bash —— 150x200</span>
+                          </div>
+
+                <div class="window-welcome">
+                  <h1 class="type"><span class="typing" id="typing-element"></span></h1>
+                     <h1 class="welcome"></h1>
+                </div>
+                </div>
+            </div>
     </div>
     <div class="container-projects"></div>
     <div class="container-links"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+    <script>
+      var typed = new Typed('#typing-element', {
+        strings: ['Hello, my name is Filip Handzel.<br><br>I am a beginner front-end developer and good webdesigner.<br><br>Please see my latest projects.'],
+        typeSpeed: 120,
+        startDelay: 2000,
+        loop: false
+    })
+   </script>
   </body>
 </html>
