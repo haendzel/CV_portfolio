@@ -26,10 +26,13 @@ p {
 	min-height: 100vh;
 	background-color: #243470;
 	color: #f1f1f1;
+}
+
+.projects {
 	display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0 auto;
+    flex-flow: row wrap;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .container-myskills {
 	width: 100vw;
@@ -190,8 +193,15 @@ align-items: center;
 	margin: 0.5em;
 }
 .item {
-    width: 250px;
+    width: 330px;
     height: 380px;
     border: 1px black solid;
     background: #f1f1f1;
+    flex: 1 0 calc(32% - 14px); 
+    justify-content: center;
+    margin: 10px;
+}
+.title {
+	padding: 70px;
+
 }
