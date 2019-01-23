@@ -9,20 +9,26 @@
 <link rel="stylesheet" href="css/styles.css"> 
 <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,600,700" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 </head>
   <body>
 
+  <div class="container-fluid">
+
+    <!--- LOGO AND LINK TO DOWNLOAD CV ---> 
     <a class="cv-link" href="#download">Download CV</a>
-    <div class="logo"></div>
-    <nav class="navigation" id="mainNav">
+
+    <!--- NAVIGATION --->
+    <nav class="navigation">
                 <a class="navlink" href="#terminal">Terminal</a>
                 <a class="navlink" href="#projects">Projects</a>
                 <a class="navlink" href="#myskills">My skills</a>
                 <a class="navlink" href="#contact">Contact</a>
     </nav>
 
-    <div class="container-main">
+    <!--- TERMINAL --->
+    <section class="main">
           <div class="section" id="terminal" data-hash="terminal">
             <div class="window" id="home">
                 <div class="window-header"><span>CV_portfolio —— bash —— 150x200</span>
@@ -34,20 +40,199 @@
                 </div>
                 </div>
             </div>
+    </section>
+
+    <!--- PROJECTS ---->
+    <section class="projects" id="projects" data-hash="projects">
+        <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="card">
+                            <a class="img-card" href="">
+                            <img src="img/alek.png" />
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <a href=""> Alek Jozefczyk
+                                  </a>
+                                </h4>
+                                <p class="info">
+                                    Development <br> HTML5, CSS3, Bootstrap4, JS, ReactJS
+                                </p>
+                            </div>
+                            <div class="card-read-more">
+                                <a href="" class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="card">
+                            <a class="img-card" href="">
+                            <img src="img/pasha.png" />
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <a href=""> Front-End Family
+                                  </a>
+                                </h4>
+                                <p class="info">
+                                    Design and development <br>
+                                    HTML5, CSS3, JS, jQuery, ReactJS, Photoshop
+                                </p>
+                            </div>
+                            <div class="card-read-more">
+                                <a href="" class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="card">
+                            <a class="img-card" href="">
+                            <img src="img/asp.png" />
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <a href="">ASP Krakow
+                                  </a>
+                                </h4>
+                                <p class="info">
+                                    UX/UI and Web design<br> Axure, InVision, Photoshop
+                                </p>
+                            </div>
+                            <div class="card-read-more">
+                                <a href="" class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!---- First row here ---->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="card">
+                            <a class="img-card" href="">
+                            <img src="img/photo.jpg" />
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <a href=""> My art portfolio
+                                  </a>
+                                </h4>
+                                <p class="info">
+                                    HTML5, CSS3, JS, Bootstrap4, ReactJs
+                                </p>
+                            </div>
+                            <div class="card-read-more">
+                                <a href="" class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="card">
+                            <a class="img-card" href="">
+                            <img src="img/photo.jpg" />
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <a href=""> Furniture store
+                                  </a>
+                                </h4>
+                                <p class="info">
+                                    HTML5, CSS3, JS, Bootstrap4, ReactJs
+                                </p>
+                            </div>
+                            <div class="card-read-more">
+                                <a href="" class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="card">
+                            <a class="img-card" href="">
+                            <img src="img/photo.jpg" />
+                          </a>
+                            <div class="card-content">
+                                <h4 class="card-title">
+                                    <a href="">Furniture store
+                                  </a>
+                                </h4>
+                                <p class="info">
+                                    HTML5, CSS3, JS, Bootstrap4, ReactJs
+                                </p>
+                            </div>
+                            <div class="card-read-more">
+                                <a href="" class="btn btn-link btn-block">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                  </div> <!-- Second row here --->
+          </section> <!-- Container Projects here --->
+
+    <!--- MY SKILLS PAGE --->
+  <section class="myskills" id="myskills" data-hash="myskills">
+    <div class="container">
+    <div class="row">
+
+    <div class="col-md-4 box-skills">
+    <div class="skills">
+  <ul>
+    <h2>Code languages</h2>
+    <li><span class="html"></span><em>HTML5</em></li>
+    <li><span class="css"></span><em>CSS3</em></li>
+    <li><span class="js"></span><em>Javascript</em></li>
+    <li><span class="cpp"></span><em>C++</em></li>
+    <li><span class="processing"></span><em>Processing</em></li>
+  </ul>
     </div>
-    <div class="container-projects" id="projects" data-hash="projects">
-      <div class="title"><h1>My last projects</h1></div>
-      <div class="projects">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-      </div>
     </div>
-    <div class="container-myskills" id="myskills" data-hash="myskills">hello</div>
-    <div class="container-contact" id="contact" data-hash="contact">hello</div>
+
+    <div class="col-md-4 box-skills">
+    <div class="skills">
+  <ul>
+    <h2>Frameworks and libraries</h2>
+    <li><span class="bootstrap"></span><em>Bootstrap 4</em></li>
+    <li><span class="reactjs"></span><em>ReactJS</em></li>
+    <li><span class="arduino"></span><em>Arduino</em></li>
+  </ul>
+    </div>
+    </div>
+
+    <div class="col-md-4 box-skills">
+    <div class="skills">
+  <ul>
+    <h2>Programs and other</h2>
+    <li><span class="git"></span><em>Terminal GIT</em></li>
+    <li><span class="npm"></span><em>npm</em></li>
+    <li><span class="webpack"></span><em>Webpack</em></li>
+    <li><span class="photoshop"></span><em>Photoshop</em></li>
+    <li><span class="adobe"></span><em>Pocket Adobe (Ai, Id, Ae, Xd)</em></li>
+    <li><span class="axure"></span><em>Axure</em></li>
+    <li><span class="sketch"></span><em>Sketch</em></li>
+    <li><span class="blender"></span><em>Blender 3D</em></li>
+  </ul>
+  </div>
+  </div>
+  
+  </div>
+  </div>
+
+</section>
+
+    <!--- CONTACT PAGE --->
+    <section class="contact" id="contact" data-hash="contact">hello</section>
+
+  </div> <!--- end CONTAINER ALL PAGE HERE --->
+
+  <!--- SCRIPTS JS --->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
     <script>
       var typed = new Typed('#typing-element', {
