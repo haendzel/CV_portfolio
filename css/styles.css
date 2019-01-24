@@ -44,6 +44,7 @@ ul {
   z-index: 50;
   transition: top 0.3s;
   background-color: #f8f8f8;
+  border-bottom: black solid 1px;
 }
 .main{
 	background: url("../img/coder5.jpg");
@@ -122,12 +123,12 @@ h1 {
 }
 
 .window-welcome {
-  border:2px solid black;
   background: #f8f8f8;
   color: #f8f8f8;
   padding: 50px;
-  box-shadow: 2px 2px 0px #fff;
-  background: #090a0f;
+  background: black;
+  opacity: 0.90;
+  border-radius: 0px 0px 3px 3px;
 }
 
 .clr{
@@ -137,15 +138,13 @@ h1 {
   margin: 0;
 }
 .window {
-  border:2px solid black;
   padding:6px 6px 6px 6px;
-  background: lightgrey;
-  box-shadow:2px 2px 0px black, inset 2px 2px 0px #fff;
+  background: transparent;
 }
 
 .window-header {
-  margin-bottom:6px;
-  background:lightgrey;
+  background: #cecece;
+  border-radius: 3px 3px 0px 0px;
 }
 
 .window-header{
@@ -154,11 +153,10 @@ h1 {
 }
 .window-header span{
   margin:auto 0;
-  background:lightgrey;
+  background: #cecece;
   text-align:center;
   padding:0px 6px 2px 6px;
   top:0px;
-  font-family: Consolas, monaco;
   letter-spacing:0.01em; 
   font-size: 15px;
 }
@@ -184,9 +182,9 @@ left: 0;
   align-items: center;
   width: 100%;
   text-decoration: none;
-  border:2px solid black;
   background: #f8f8f8;
-  box-shadow:2px 2px 0px black, inset 2px 2px 0px #fff;
+  border-right: black solid 1px;
+  border-top: black solid 1px;
 }
 .navlink:hover {
   text-decoration: none;
@@ -196,20 +194,17 @@ left: 0;
   justify-content: space-around;
   align-items: center;
   transition: ease 0.5s;
-  border:2px solid black;
-  background: #b7b7b7;
-  box-shadow:2px 2px 0px black, inset 2px 2px 0px #fff;
+  color: #f8f8f8;
+  background: #0ba18e;
 }
 .navlink.active {
-  color: #262626;
+  color: #f8f8f8;
   background-color: white;
   padding: 5px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border:2px solid black;
-  background: #969696;
-  box-shadow:2px 2px 0px black, inset 2px 2px 0px #fff;
+  background: #00cc99;
 }
 
 .cv-link {
@@ -219,13 +214,13 @@ left: 0;
 	color: #0ba18e;
 }
 .logo {
-	background: url("../img/logo.png") no-repeat;
+  font-weight: 700;
+  color: #0ba18e;
 	position: fixed;
 	z-index: 100;
 	left: 0;
-	width: 100px;
-	height: 50px;
-	margin: 0.5em;
+  margin-top: 1em;
+  margin-left: 1em;
 }
 .item {
     width: 330px;
