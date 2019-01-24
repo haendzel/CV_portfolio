@@ -9,6 +9,7 @@ html, body {
   min-height: 100%;
   margin: 0px;
   padding: 0px;
+  /*overflow: hidden;*/
 }
 a {
 	text-decoration: none;
@@ -18,8 +19,11 @@ p {
 	font-size: 13px;
 	color: white;
 }
+
+ul {
+  list-style-type: none;
+}
 .container-fluid {
-  overflow-x: hidden;
   padding-left: 0 !important;
   padding-right: 0 !important;
   top: 0;
@@ -27,13 +31,27 @@ p {
   margin: 0;
   position: absolute;
   padding: 0px;
-  width: 100%;
+  width: 10%;
   min-height: 100%;
   font-family: 'Inconsolata', monospace;
 }
+.topnav {
+  display: block;
+  position: fixed;
+  height: 60px;
+  width: 100vw;
+  top: 0;
+  z-index: 50;
+  transition: top 0.3s;
+  background-color: #f8f8f8;
+}
 .main{
-	background: url("../img/coder.jpg") no-repeat;
-	background-size: 100%;
+	background: url("../img/coder5.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
 }
 .projects, .main, .contact{
 	width: 100vw;
@@ -49,7 +67,7 @@ p {
   padding-top: 100px;
 }
 .projects {
-  background-color: #181818;
+  background-color: #f8f8f8;
   color: #f1f1f1;
 }
 
@@ -97,15 +115,15 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 150px;
+  padding-top: 200px;
 }
 .window-welcome h1 {
-	font-size: 21px;
+	font-size: 19px;
 }
 
 .window-welcome {
   border:2px solid black;
-  background: #262626;
+  background: #f8f8f8;
   color: #f8f8f8;
   padding: 50px;
   box-shadow: 2px 2px 0px #fff;
@@ -148,7 +166,7 @@ h1 {
 position: fixed;
 margin: 0 auto;
 width: 100%;
-color: #262626;
+color: #f8f8f8;
 z-index: 101;
 bottom: 0;
 display: flex;
@@ -167,7 +185,7 @@ left: 0;
   width: 100%;
   text-decoration: none;
   border:2px solid black;
-  background: lightgrey;
+  background: #f8f8f8;
   box-shadow:2px 2px 0px black, inset 2px 2px 0px #fff;
 }
 .navlink:hover {
@@ -198,15 +216,15 @@ left: 0;
 	position: fixed;
 	right: 0;
 	margin: 1em;
-	color: white;
+	color: #0ba18e;
 }
 .logo {
 	background: url("../img/logo.png") no-repeat;
 	position: fixed;
 	z-index: 100;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	width: 100px;
+	height: 50px;
 	margin: 0.5em;
 }
 .item {
@@ -367,6 +385,22 @@ left: 0;
   width: 30%;
   animation: blender 2s ease-out;
 }
+.skills .postcss{
+  width: 10%;
+  animation: postcss 2s ease-out;
+}
+.skills .sass{
+  width: 10%;
+  animation: sass 2s ease-out;
+}
+.skills .koala{
+  width: 10%;
+  animation: koala 2s ease-out;
+}
+.skills .sublime{
+  width: 60%;
+  animation: sublime 2s ease-out;
+}
 
 .info {
   color: #000;
@@ -499,6 +533,34 @@ left: 0;
   }
   100% {
     width: 30%;
+  }
+  @keyframes postcss{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 10%;
+  }
+    @keyframes sass{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 10%;
+  }
+    @keyframes koala{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 10%;
+  }
+    @keyframes sublime{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60%;
   }
 }
 
