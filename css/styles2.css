@@ -1,0 +1,237 @@
+@import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
+
+body, html {
+  background: #F5F5F5;
+  overflow: hidden;
+}
+.main{
+  margin: 0;
+  min-height: 100vh;
+  color: #193154;
+  background: rgb(20,32,93);
+  background: linear-gradient(180deg, rgba(20,32,93,1) 0%, rgba(240,236,223,1) 69%, rgba(255,255,255,1) 100%);
+}
+.container {
+  width: 100vh;
+  height: 100vh;
+  left: 0;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+.container p {
+  font-size: 20px;
+}
+.typing a  {
+  color: #FF5252;
+  text-decoration: none;
+  font-size: 30px;
+  overflow: hidden;
+}
+h1 {
+  position: relative;
+  text-align: left;
+  font-family: 'Vollkorn', serif;
+  line-height: 1.9;
+  color: #193154;
+}
+
+.button_container {
+  position: fixed;
+  top: 5%;
+  right: 2%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+}
+.button_container:hover {
+  opacity: .7;
+}
+.button_container.active .top {
+  -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+          transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #FFF;
+}
+.button_container.active .middle {
+  opacity: 0;
+  background: #FFF;
+}
+.button_container.active .bottom {
+  -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+          transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #FFF;
+}
+.button_container span {
+  background: #FF5252;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .35s ease;
+  cursor: pointer;
+  z-index: 10;
+}
+.button_container span:nth-of-type(2) {
+  top: 11px;
+}
+.button_container span:nth-of-type(3) {
+  top: 22px;
+}
+
+.overlay {
+  position: fixed;
+  background: #FF5252;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+}
+.overlay.open {
+  opacity: .97;
+  visibility: visible;
+  height: 100%;
+  z-index: 10;
+}
+.overlay.open li {
+  -webkit-animation: fadeInRight .5s ease forwards;
+          animation: fadeInRight .5s ease forwards;
+  -webkit-animation-delay: .35s;
+          animation-delay: .35s;
+}
+.overlay.open li:nth-of-type(2) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+.overlay.open li:nth-of-type(3) {
+  -webkit-animation-delay: .45s;
+          animation-delay: .45s;
+}
+.overlay.open li:nth-of-type(4) {
+  -webkit-animation-delay: .50s;
+          animation-delay: .50s;
+}
+.overlay nav {
+  position: relative;
+  height: 70%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 50px;
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
+  text-align: center;
+}
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+.overlay ul li {
+  display: block;
+  height: 25%;
+  height: calc(100% / 4);
+  min-height: 50px;
+  position: relative;
+  opacity: 0;
+}
+.overlay ul li a {
+  display: block;
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  overflow: hidden;
+}
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+  width: 100%;
+}
+.overlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 3px;
+  background: #FFF;
+  transition: .35s;
+}
+
+.logo {
+  border: #193154 solid 2px;
+  padding: 5px;
+  font-weight: 600;
+  color: #193154;
+  font-family: monospace;
+  position: fixed;
+  top: 5%;
+  left: 2%;
+  z-index: 100;
+  font-size: 1.5em;
+  z-index: 1;
+}
+
+.welcome {
+  position: absolute;
+  top: 25%;
+  color: #111111;
+  padding: 30px;
+  border-radius: 0px 0px 3px 3px;
+}
+
+.social-media {
+  position: absolute;
+  background: #fcfcfc;
+  border-top: #dbdbdb solid 1px;
+  height: 70px;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.fab {
+  font-size: 2em;
+  margin: 0.5em;
+}
+
+.fab a {
+  color: black !important;
+}
+
+.fab a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
