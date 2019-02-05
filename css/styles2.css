@@ -21,11 +21,12 @@ body, html {
 .container p {
   font-size: 20px;
 }
-.typing a  {
+a:-webkit-any-link {
+  color: #193154;
+}
+
+a:hover {
   color: #FF5252;
-  text-decoration: none;
-  font-size: 30px;
-  overflow: hidden;
 }
 h1 {
   position: relative;
@@ -33,6 +34,14 @@ h1 {
   font-family: 'Vollkorn', serif;
   line-height: 1.9;
   color: #193154;
+}
+
+.typing a  {
+  color: #FF5252;
+  text-decoration: none;
+  font-size: 30px;
+  overflow: hidden;
+  border-bottom: 3px solid currentColor;
 }
 
 .button_container {
@@ -225,13 +234,20 @@ h1 {
 .fab {
   font-size: 2em;
   margin: 0.5em;
+  text-decoration: none;
 }
 
 .fab a {
-  color: black !important;
+  color: ;
 }
 
 .fab a:hover {
-  opacity: 0.8;
   cursor: pointer;
+}
+.fab a:link {
+  color: #193154;
+}
+
+.fab a:visited {
+  color: #193154;
 }

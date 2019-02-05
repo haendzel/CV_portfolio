@@ -5,80 +5,52 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Filip Handzel - Junior front-end & web designer</title>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<link rel="stylesheet" href="css/styles.css"> 
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link rel="stylesheet" href="css/styles2.css"> 
 <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,600,700" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-<link href="css/glightbox.css" rel="stylesheet">
 </head>
   <body>
-  <div class="container-fluid">
 
-    <!--- LOGO AND LINK TO DOWNLOAD CV ---> 
-    <div class="topnav" id="topnav">
-            <div class="row">
-    <div class="logo">Filip Handzel
-    <button class='btn navbar-btn btn-link pull-right' data-target='#modalNavigation' data-toggle='modal' type='button'>
-        <span class='sr-only'>Open navigation</span>
-        <span class='glyphicon glyphicon-menu-hamburger'></span></div>
-    <a class="cv-link" href="#download">Download CV</a>
-            </div>
-        </div>
-
-    <!--- TERMINAL --->
-    <div class="main">
-          <div class="section" id="terminal" data-hash="terminal">
-            <div class="window" id="home">
-                <div class="window-header"><span>CV_portfolio —— bash —— 150x200</span>
-                          </div>
-
-                <div class="window-welcome">
+<div class="container">
+                <div class="welcome">
                   <h1 class="type"><span class="typing" id="typing-element"></span></h1>
-                     <h1 class="welcome"></h1>
                 </div>
-                </div>
-            </div>
-    </div>
 
-<div class='modal fade modal-fullscreen-menu' id='modalNavigation' role='dialog' tabindex='-1'>
-  <button aria-label='Close' class='close' data-dismiss='modal' type='button'>
-    <span class='sr-only'>Close navigation</span>
-    <span class='glyphicon glyphicon-remove'></span>
-  </button>
-  <div class='modal-dialog'>
-    <nav class='list-group'>
-      <a class='list-group-item' href='#'>Home</a>
-      <a class='list-group-item' href='#'>Services</a>
-      <a class='list-group-item' href='#'>Meet the Team</a>
-      <a class='list-group-item' href='#'>Careers</a>
-      <a class='list-group-item' href='#'>Contact Us</a>
-    </nav>
-  </div>
+<div class="logo">filiphandzel</div>
+<div class="button_container" id="toggle">
+  <span class="top"></span>
+  <span class="middle"></span>
+  <span class="bottom"></span>
 </div>
 
-  </div> <!--- end CONTAINER ALL PAGE HERE --->
-
-  <!--- SCRIPTS JS --->
+<div class="social-media">  <a class="fab fa-github" href="https://github.com/haendzel"></a>  <a class="fab fa-behance" href="https://www.behance.net/handzel"></a>  <a class="fab fa-linkedin-in" href="https://pl.linkedin.com/in/filip-handzel-7b653262"></a></div>
+</div>
+<div class="overlay" id="overlay">
+  <nav class="overlay-menu">
+    <ul>
+      <li ><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
     <script>
       var typed = new Typed('#typing-element', {
-        strings: ["Hello, my name is Filip Handzel.<br><br>I'm study in Jan Matejko Academy of Fine Arts in Krakow.<br><br>I like programming, visual generative art and sci-fi books.<br><br> I'm looking for an internship as front-end developer! :)"],
-        typeSpeed: 120,
-        startDelay: 2000,
+        strings: ['Hello, my name is Filip Handzel.<br>I am study in Jan Matejko Academy of Fine Arts in Krakow.<br>I like programming, visual generative art and sci-fi books.<br> I would like to go on an internship as web developer!<br><br>Click <a href="#">here</a> to download my CV'],
+        typeSpeed: 60,
+        startDelay: 1000,
         loop: false
     })
    </script>
-
-    <!-- lightgallery plugins -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-    var myLightbox = GLightbox({
-    'selector': 'glightboxTest'
-    });
+<script type="text/javascript">
+    $('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
     </script>
   </body>
 </html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Filip Handzel - Junior front-end & web designer</title>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link rel="stylesheet" href="css/styles2.css"> 
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+  <body>
+
+<div class="container">
+                <section class="projects" id="projects" data-hash="projects">
+        <div class="row">
+            <figure class="col-lg-3 col-md-4 col-xs-6">
+          <a href="img/pasha.png" class="glightboxTest" data-title='Website for <b>Front-End Family</b> small business IT company.<br><br>HTML, CSS, Javascript, ReactJS' data-type="image">
+          <img class="img-thumbnail img-fluid" src='img/thumbs/thumb1.jpg' alt="image">
+          <div class="glightbox-desc">
+          </div>
+        </a>
+        </figure>
+
+        <figure class="col-lg-3 col-md-4 col-xs-6">
+          <a href="img/asp.png" class="glightboxTest" data-title='"Factory", screenprint, 2017, 30x70' data-type="image">
+          <img class="img-thumbnail img-fluid" src='img/thumbs/thumb2.jpg' alt="image">
+          <div class="glightbox-desc">
+          </div>
+        </a>
+        </figure>
+
+        <figure class="col-lg-3 col-md-4 col-xs-6">
+          <a href="img/painting-other/factory_screenprint _0x70.JPG" class="glightboxTest" data-title='"Factory", screenprint, 2017, 30x70' data-type="image">
+          <img class="img-thumbnail img-fluid" src='img/thumbs/thumb3.jpg' alt="image">
+          <div class="glightbox-desc">
+          </div>
+        </a>
+        </figure>
+
+        <figure class="col-lg-3 col-md-4 col-xs-6">
+          <a href="img/painting-other/factory_screenprint _0x70.JPG" class="glightboxTest" data-title='"Factory", screenprint, 2017, 30x70' data-type="image">
+          <img class="img-thumbnail img-fluid" src='img/thumbs/thumb4.jpg' alt="image">
+          <div class="glightbox-desc">
+          </div>
+        </a>
+        </figure>
+        
+        </div> <!-- Second row here --->
+          </section> <!-- Container Projects here --->
+
+<div class="logo">filiphandzel</div>
+<div class="button_container" id="toggle">
+  <span class="top"></span>
+  <span class="middle"></span>
+  <span class="bottom"></span>
+</div>
+
+<div class="social-media">  <a class="fab fa-github" href="https://github.com/haendzel"></a>  <a class="fab fa-behance" href="https://www.behance.net/handzel"></a>  <a class="fab fa-linkedin-in" href="https://pl.linkedin.com/in/filip-handzel-7b653262"></a></div>
+</div>
+<div class="overlay" id="overlay">
+  <nav class="overlay-menu">
+    <ul>
+      <li ><a href="index2.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+<script type="text/javascript">
+    $('#toggle').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
+    </script>
+  </body>
+</html>
