@@ -1,18 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
 
-body, html {
+body {
   background: #F5F5F5;
+  margin: 0;
   overflow: hidden;
 }
-.main{
-  margin: 0;
-  min-height: 100vh;
-  color: #193154;
-  background: rgb(20,32,93);
-  background: linear-gradient(180deg, rgba(20,32,93,1) 0%, rgba(240,236,223,1) 69%, rgba(255,255,255,1) 100%);
+
+.projects {
+  padding-top: 100px;
 }
+
 .container {
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   left: 0;
   margin: 0 auto;
@@ -43,9 +42,8 @@ h1 {
   overflow: hidden;
   border-bottom: 3px solid currentColor;
 }
-
 .button_container {
-  position: fixed;
+  position: absolute;
   top: 5%;
   right: 2%;
   height: 27px;
@@ -89,7 +87,6 @@ h1 {
 .button_container span:nth-of-type(3) {
   top: 22px;
 }
-
 .overlay {
   position: fixed;
   background: #FF5252;
@@ -175,7 +172,6 @@ h1 {
   background: #FFF;
   transition: .35s;
 }
-
 .logo {
   border: #193154 solid 2px;
   padding: 5px;
@@ -189,15 +185,14 @@ h1 {
   font-size: 1.5em;
   z-index: 1;
 }
-
 .welcome {
   position: absolute;
   top: 25%;
   color: #111111;
-  padding: 30px;
   border-radius: 0px 0px 3px 3px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
-
 .social-media {
   position: absolute;
   background: #fcfcfc;
@@ -208,7 +203,6 @@ h1 {
   left: 0;
   text-align: center;
 }
-
 @-webkit-keyframes fadeInRight {
   0% {
     opacity: 0;
@@ -230,7 +224,6 @@ h1 {
     left: 0;
   }
 }
-
 .fab {
   font-size: 2em;
   margin: 0.5em;
@@ -251,3 +244,266 @@ h1 {
 .fab a:visited {
   color: #193154;
 }
+.myskills {
+  display: flex;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-top: 100px;
+}
+.skills {
+  width: inherit;
+  position: relative;
+  float: left;
+  flex: 1 0 calc(33.333% - 20px);
+}
+.frameworks, .languages, .programs {
+  flex-grow: 1;
+  margin: 10px;
+}
+.skills h2 {
+  padding-bottom: 50px;
+  font-size: 1.5em;
+}
+.skills ul {
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.skills ul > li {
+  margin-bottom: 50px;
+  background: #193154;
+  height: 6px;
+  list-style-type: none;
+}
+.skills ul > li em {
+  font-size: 16px;
+  position: relative;
+  top: -30px;
+}
+.skills ul > li span {
+  height: inherit;
+  background-color: #FF5252;
+  position: absolute;
+}
+.skills .html {
+  width: 80%;
+  animation: html 2s ease-out;
+}
+.skills .css {
+  width: 80%;
+  animation: css 2s ease-out;
+}
+.skills .js {
+  width: 20%;
+  animation: js 2s ease-out;
+}
+.skills .reactjs {
+  width: 10%;
+  animation: reactjs 2s ease-out;
+}
+.skills .cpp {
+  width: 15%;
+  animation: cpp 2s ease-out;
+}
+.skills .processing {
+  width: 20%;
+  animation: processing 2s ease-out;
+}
+.skills .arduino {
+  width: 55%;
+  animation: arduino 2s ease-out;
+}
+.skills .bootstrap {
+  width: 50%;
+  animation: bootstrap 2s ease-out;
+}
+.skills .git {
+  width: 35%;
+  animation: git 2s ease-out;
+}
+.skills .npm {
+  width: 10%;
+  animation: npm 2s ease-out;
+}
+.skills .webpack {
+  width: 10%;
+  animation: webpack 2s ease-out;
+}
+.skills .photoshop {
+  width: 90%;
+  animation: photoshop 2s ease-out;
+}
+.skills .adobe {
+  width: 80%;
+  animation: adobe 2s ease-out;
+}
+.skills .axure {
+  width: 50%;
+  animation: axure 2s ease-out;
+}
+.skills .sublime{
+  width: 70%;
+  animation: sublime 2s ease-out;
+}
+.skills .postcss{
+  width: 10%;
+  animation: postcss 2s ease-out;
+}
+.skills .sass{
+  width: 10%;
+  animation: sass 2s ease-out;
+}
+.info {
+  color: #000;
+  line-height: 16px;
+  padding: 3px;
+}
+@keyframes html {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes css {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes js {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 20%;
+  }
+}
+@keyframes reactjs {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 10%;
+  }
+}
+@keyframes cpp {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 15%;
+  }
+}
+@keyframes processing{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 20%;
+  }
+}
+@keyframes arduino {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 55%;
+  }
+}
+@keyframes bootstrap {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes git{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 35%;
+  }
+}
+@keyframes npm{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 10%;
+  }
+}
+@keyframes webpack{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 10%;
+  }
+}
+@keyframes photoshop{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes adobe{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes axure{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 50%;
+  }
+}
+  @keyframes postcss{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 10%;
+  }
+    @keyframes sass{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 10%;
+  }
+    @keyframes sublime{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+li, ul {
+  list-style-type: none !important;
+  display: none;
+}
+
+article {
+        padding: 10px;
+        margin: 10px;
+        background: aqua;
+      }
+/* Add your flexbox CSS below here */
+section {
+        display: flex;
+      }
