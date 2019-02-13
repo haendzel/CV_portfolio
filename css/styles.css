@@ -39,10 +39,11 @@ a:hover {
   color: #FF5252;
 }
 h1 {
+  font-size: 1.8em;
   position: relative;
   text-align: left;
   font-family: 'Vollkorn', serif;
-  line-height: 1.9;
+  line-height: 1.8;
   color: #193154;
 }
 .typing a  {
