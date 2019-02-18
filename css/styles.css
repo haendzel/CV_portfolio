@@ -45,6 +45,9 @@ h1 {
   line-height: 1.9;
   color: #193154;
 }
+.overlay ul li {
+  height: 20% !important;
+}
 .typing a  {
   color: #FF5252;
   text-decoration: none;
