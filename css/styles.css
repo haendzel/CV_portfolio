@@ -188,7 +188,7 @@ h1 {
 }
 .logo {
   border: #193154 solid 2px;
-  padding: 5px;
+  padding: 15px;
   font-weight: 600;
   color: #193154;
   font-family: monospace;
@@ -285,7 +285,7 @@ li, ul {
   float: left;
   flex: 1 0 calc(33.333% - 20px);
 }
-.frameworks, .languages, .programs {
+.soft, .languages, .programs {
   flex-grow: 1;
   margin: 10px;
 }
@@ -387,6 +387,42 @@ li, ul {
 .skills .atom{
   width: 50%;
   animation: atom 2s ease-out;
+}
+.skills .work-team{
+  width: 55%;
+  animation: work-team 2s ease-out;
+}
+.skills .energy{
+  width: 70%;
+  animation: energy 2s ease-out;
+}
+.skills .respectful{
+  width: 90%;
+  animation: respectful 2s ease-out;
+}
+.skills .deal-making{
+  width: 90%;
+  animation: deal-making 2s ease-out;
+}
+.skills .creativity{
+  width: 90%;
+  animation: creativity 2s ease-out;
+}
+.skills .adaptable{
+  width: 60%;
+  animation: adaptable 2s ease-out;
+}
+.skills .research{
+  width: 90%;
+  animation: research 2s ease-out;
+}
+.skills .logical-thinking{
+  width: 80%;
+  animation: logical-thinking 2s ease-out;
+}
+.skills .pixel-perfect {
+  width: 80%;
+  animation: pixel-perfect 2s ease-out;
 }
 .info {
   color: #000;
@@ -530,13 +566,85 @@ li, ul {
     width: 70%;
   }
 }
-@keyframes atom{
-0% {
-width: 0px;
+  @keyframes atom{
+  0% {
+  width: 0px;
+  }
+  100% {
+  width: 50%;
+  }
 }
-100% {
-width: 50%;
+  @keyframes work-team{
+  0% {
+  width: 0px;
+  }
+  100% {
+  width: 55%;
+  }
 }
+  @keyframes energy{
+  0% {
+  width: 0px;
+  }
+  100% {
+  width: 70%;
+  }
+}
+  @keyframes respectful{
+  0% {
+  width: 0px;
+  }
+  100% {
+  width: 90%;
+  }
+}
+  @keyframes deal-making{
+  0% {
+  width: 0px;
+  }
+  100% {
+  width: 90%;
+  }
+}
+  @keyframes creativity{
+  0% {
+  width: 0px;
+  }
+  100% {
+  width: 90%;
+  }
+}
+  @keyframes adaptable{
+  0% {
+  width: 0px;
+  }
+  100% {
+  width: 60%;
+  }
+}
+  @keyframes research{
+  0% {
+  width: 0px;
+  }
+  100% {
+  width: 90%;
+  }
+}
+  @keyframes logical-thinking{
+  0% {
+  width: 0px;
+  }
+  100% {
+  width: 80%;
+  }
+}
+  @keyframes pixel-perfect{
+  0% {
+  width: 0px;
+  }
+  100% {
+  width: 80%;
+  }
 }
 input[type=name], input[type=email], input[type=subject] {
   width: 50%;
