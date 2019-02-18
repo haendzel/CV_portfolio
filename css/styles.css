@@ -31,8 +31,8 @@ body {
 .container p {
   font-size: 20px;
 }
-a:-webkit-any-link {
-  color: #193154;
+a:-webkit-any-link, a:any-link, a:-moz-any-link, a:-ms-any-link {
+  color: #0a121e;
 }
 
 a:hover {
@@ -238,21 +238,22 @@ h1 {
   font-size: 2em;
   margin: 0.5em;
   text-decoration: none;
+  color: #0a121e;
 }
 
 .fab a {
-  color: ;
+  color: #0a121e;
 }
 
 .fab a:hover {
   cursor: pointer;
 }
-.fab a:link {
-  color: #193154;
+.fab a:link, .fab a:-moz-link, fab a:-webkit-link, fab a:-ms-link {
+  color: #0a121e;
 }
 
 .fab a:visited {
-  color: #193154;
+  color: #0a121e;
 }
 
 li, ul {
@@ -649,15 +650,15 @@ li, ul {
 input[type=name], input[type=email], input[type=subject] {
   width: 50%;
   padding: 12px;
-  border: 1px solid #ccc; 
+  border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */ 
+  margin-bottom: 16px; /* Bottom margin */
 }
 input[type=text], select, textarea {
   width: 100%; /* Full width */
-  padding: 12px; /* Some padding */  
+  padding: 12px; /* Some padding */
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
@@ -699,7 +700,7 @@ p.errordiv{color:#E80000;}
 .welcome {
   margin-left: 200px;
   margin-right: 200px;
-} 
+}
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
 .welcome {
@@ -707,7 +708,7 @@ p.errordiv{color:#E80000;}
   margin-right: 0px;
   padding-left: 50px;
   padding-right: 50px;
-} 
+}
 .container {
   height: auto;
  }
@@ -755,7 +756,7 @@ p.errordiv{color:#E80000;}
   .container {
     height: auto;
   }
-} 
+}
 /* landscape mobile phones */
 @media (min-width: 570px) and (max-width: 767px) {
   body {
@@ -819,7 +820,7 @@ p.errordiv{color:#E80000;}
   width: 100%;
   }
 }
- 
+
 
 @media (min-width: 375px) and (max-width: 414px) {
   body {
@@ -850,7 +851,7 @@ p.errordiv{color:#E80000;}
   width: 100%;
   }
 }
- 
+
 
 @media (max-width: 320px) {
   body {
