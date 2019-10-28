@@ -9,14 +9,13 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+<link rel="stylesheet" type="text/css" href="src/style/main.css">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134760315-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-134760315-1');
 </script>
 </head>
@@ -47,19 +46,8 @@
   </nav>
 </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
-    <script>
-      var typed = new Typed('#typing-element', {
-        strings: ['Hello, my name is Filip Handzel.<br>I am study in Jan Matejko Academy of Fine Arts in Krakow.<br>I like programming, design, generative art and sci-fi books.<br> I would like to go on an internship as UI/Front-end developer!<br><br>Click <a target="_blank" rel="noopener noreferrer" href="filiphandzel-cv.pdf">here</a> to download my CV'],
-        typeSpeed: 60,
-        startDelay: 1000,
-        loop: false
-    })
-   </script>
-<script type="text/javascript">
-    $('#toggle').click(function() {
-   $(this).toggleClass('active');
-   $('#overlay').toggleClass('open');
-  });
+    <script src="src/scripts/typing.js"></script>
+    <script src="src/scripts/toggle-menu.js"></script>
     </script>
   </body>
 </html>

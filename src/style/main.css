@@ -1,0 +1,883 @@
+@import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
+
+body {
+  background: #F5F5F5;
+  margin: 0;
+  overflow: hidden;
+}
+
+.welcome, .contact, .myskills {
+  margin-top: 20vh;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.contact {
+  display: block;
+}
+
+.projects {
+  margin-top: 20vh;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+.container p {
+  font-size: 20px;
+}
+a:-webkit-any-link, a:any-link, a:-moz-any-link, a:-ms-any-link {
+  color: #0a121e;
+}
+
+a:hover {
+  color: #FF5252;
+}
+h1 {
+  font-size: 1.8em;
+  position: relative;
+  text-align: left;
+  font-family: 'Vollkorn', serif;
+  line-height: 1.8;
+  color: #193154;
+}
+.overlay ul li {
+  height: 20% !important;
+}
+.typing a  {
+  color: #FF5252;
+  text-decoration: none;
+  font-size: 30px;
+  overflow: hidden;
+  border-bottom: 3px solid currentColor;
+}
+.button_container {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+}
+.button_container:hover {
+  opacity: .7;
+}
+.button_container.active .top {
+  -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+          transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #FFF;
+}
+.button_container.active .middle {
+  opacity: 0;
+  background: #FFF;
+}
+.button_container.active .bottom {
+  -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+          transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #FFF;
+}
+.button_container span {
+  background: #FF5252;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .35s ease;
+  cursor: pointer;
+  z-index: 10;
+}
+.button_container span:nth-of-type(2) {
+  top: 11px;
+}
+.button_container span:nth-of-type(3) {
+  top: 22px;
+}
+.overlay {
+  position: fixed;
+  background: #FF5252;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+}
+.overlay.open {
+  opacity: .97;
+  visibility: visible;
+  height: 100%;
+  z-index: 10;
+}
+.overlay.open li {
+  -webkit-animation: fadeInRight .5s ease forwards;
+          animation: fadeInRight .5s ease forwards;
+  -webkit-animation-delay: .35s;
+          animation-delay: .35s;
+}
+.overlay.open li:nth-of-type(2) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+.overlay.open li:nth-of-type(3) {
+  -webkit-animation-delay: .45s;
+          animation-delay: .45s;
+}
+.overlay.open li:nth-of-type(4) {
+  -webkit-animation-delay: .50s;
+          animation-delay: .50s;
+}
+.overlay nav {
+  position: relative;
+  height: 70%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 50px;
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
+  text-align: center;
+}
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+.overlay ul li {
+  display: block;
+  height: 25%;
+  height: calc(100% / 4);
+  min-height: 50px;
+  position: relative;
+  opacity: 0;
+}
+.overlay ul li a {
+  display: block;
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  overflow: hidden;
+}
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+  width: 100%;
+}
+.overlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 3px;
+  background: #FFF;
+  transition: .35s;
+}
+.logo {
+  border: #193154 solid 2px;
+  padding: 15px;
+  font-weight: 600;
+  color: #193154;
+  font-family: monospace;
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  z-index: 100;
+  font-size: 1.5em;
+  z-index: 1;
+}
+.welcome {
+  color: #111111;
+  border-radius: 0px 0px 3px 3px;
+}
+.social-media {
+  position: fixed;
+  background: #fcfcfc;
+  border-top: #dbdbdb solid 1px;
+  height: 70px;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+.fab {
+  font-size: 2em;
+  margin: 0.5em;
+  text-decoration: none;
+  color: #0a121e;
+}
+
+.fab a {
+  color: #0a121e;
+}
+
+.fab a:hover {
+  cursor: pointer;
+}
+.fab a:link, .fab a:-moz-link, fab a:-webkit-link, fab a:-ms-link {
+  color: #0a121e;
+}
+
+.fab a:visited {
+  color: #0a121e;
+}
+
+li, ul {
+  list-style-type: none;
+}
+.img-thumbnail {
+  cursor: pointer;
+}
+.img-thumbnail{
+  filter: grayscale(100%) ;
+  -webkit-filter: grayscale(100%);
+}
+.img-thumbnail:hover{
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  transition: ease 0.5s;
+  opacity: 0.7;
+}
+.btn-success {
+  background-color: #FF5252;
+  border-color: #FF5252;
+}
+
+.myskills {
+  display: flex;
+}
+.skills {
+  width: inherit;
+  position: relative;
+  float: left;
+  flex: 1 0 calc(33.333% - 20px);
+}
+.soft, .languages, .programs {
+  flex-grow: 1;
+  margin: 10px;
+}
+.skills h2 {
+  padding-bottom: 50px;
+  font-size: 1.3em;
+  font-family: 'Vollkorn', serif;
+  color: #193154;
+}
+.skills ul {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.skills ul > li {
+  margin-bottom: 40px;
+  background: #193154;
+  height: 6px;
+  list-style-type: none;
+}
+.skills ul > li em {
+  font-size: 14px;
+  position: relative;
+  top: -30px;
+  opacity: 0.7;
+}
+.skills ul > li span {
+  height: inherit;
+  background-color: #FF5252;
+  position: absolute;
+}
+.skills .html {
+  width: 80%;
+  animation: html 2s ease-out;
+}
+.skills .css {
+  width: 80%;
+  animation: css 2s ease-out;
+}
+.skills .js {
+  width: 20%;
+  animation: js 2s ease-out;
+}
+.skills .reactjs {
+  width: 10%;
+  animation: reactjs 2s ease-out;
+}
+.skills .cpp {
+  width: 15%;
+  animation: cpp 2s ease-out;
+}
+.skills .processing {
+  width: 20%;
+  animation: processing 2s ease-out;
+}
+.skills .arduino {
+  width: 55%;
+  animation: arduino 2s ease-out;
+}
+.skills .bootstrap {
+  width: 50%;
+  animation: bootstrap 2s ease-out;
+}
+.skills .git {
+  width: 35%;
+  animation: git 2s ease-out;
+}
+.skills .npm {
+  width: 10%;
+  animation: npm 2s ease-out;
+}
+.skills .webpack {
+  width: 10%;
+  animation: webpack 2s ease-out;
+}
+.skills .photoshop {
+  width: 90%;
+  animation: photoshop 2s ease-out;
+}
+.skills .adobe {
+  width: 80%;
+  animation: adobe 2s ease-out;
+}
+.skills .axure {
+  width: 50%;
+  animation: axure 2s ease-out;
+}
+.skills .sublime{
+  width: 70%;
+  animation: sublime 2s ease-out;
+}
+.skills .postcss{
+  width: 10%;
+  animation: postcss 2s ease-out;
+}
+.skills .sass{
+  width: 10%;
+  animation: sass 2s ease-out;
+}
+.skills .atom{
+  width: 50%;
+  animation: atom 2s ease-out;
+}
+.skills .work-team{
+  width: 55%;
+  animation: work-team 2s ease-out;
+}
+.skills .energy{
+  width: 70%;
+  animation: energy 2s ease-out;
+}
+.skills .respectful{
+  width: 90%;
+  animation: respectful 2s ease-out;
+}
+.skills .deal-making{
+  width: 90%;
+  animation: deal-making 2s ease-out;
+}
+.skills .creativity{
+  width: 90%;
+  animation: creativity 2s ease-out;
+}
+.skills .adaptable{
+  width: 60%;
+  animation: adaptable 2s ease-out;
+}
+.skills .research{
+  width: 90%;
+  animation: research 2s ease-out;
+}
+.skills .logical-thinking{
+  width: 80%;
+  animation: logical-thinking 2s ease-out;
+}
+.skills .pixel-perfect {
+  width: 80%;
+  animation: pixel-perfect 2s ease-out;
+}
+.info {
+  color: #000;
+  line-height: 16px;
+  padding: 3px;
+}
+
+@keyframes html {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes css {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes js {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 20%;
+  }
+}
+@keyframes reactjs {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 10%;
+  }
+}
+@keyframes cpp {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 15%;
+  }
+}
+@keyframes processing{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 20%;
+  }
+}
+@keyframes arduino {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 55%;
+  }
+}
+@keyframes bootstrap {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 50%;
+  }
+}
+@keyframes git{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 35%;
+  }
+}
+@keyframes npm{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 10%;
+  }
+}
+@keyframes webpack{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 10%;
+  }
+}
+@keyframes photoshop{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes adobe{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes axure{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 50%;
+  }
+}
+  @keyframes postcss{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 10%;
+  }
+}
+    @keyframes sass{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 10%;
+  }
+}
+    @keyframes sublime{
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 70%;
+  }
+}
+  @keyframes atom{
+  0% {
+  width: 0px;
+  }
+  100% {
+  width: 50%;
+  }
+}
+  @keyframes work-team{
+  0% {
+  width: 0px;
+  }
+  100% {
+  width: 55%;
+  }
+}
+  @keyframes energy{
+  0% {
+  width: 0px;
+  }
+  100% {
+  width: 70%;
+  }
+}
+  @keyframes respectful{
+  0% {
+  width: 0px;
+  }
+  100% {
+  width: 90%;
+  }
+}
+  @keyframes deal-making{
+  0% {
+  width: 0px;
+  }
+  100% {
+  width: 90%;
+  }
+}
+  @keyframes creativity{
+  0% {
+  width: 0px;
+  }
+  100% {
+  width: 90%;
+  }
+}
+  @keyframes adaptable{
+  0% {
+  width: 0px;
+  }
+  100% {
+  width: 60%;
+  }
+}
+  @keyframes research{
+  0% {
+  width: 0px;
+  }
+  100% {
+  width: 90%;
+  }
+}
+  @keyframes logical-thinking{
+  0% {
+  width: 0px;
+  }
+  100% {
+  width: 80%;
+  }
+}
+  @keyframes pixel-perfect{
+  0% {
+  width: 0px;
+  }
+  100% {
+  width: 80%;
+  }
+}
+input[type=name], input[type=email], input[type=subject] {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #FF5252;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #FF5252;
+}
+p.statusMsg{font-size:18px;}
+p.succdiv{color: #008000;}
+p.errordiv{color:#E80000;}
+
+@media (min-width: 1900px) {
+.welcome {
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.myskills, .contact {
+  padding-left: 250px;
+  padding-right: 250px;
+}
+}
+@media (min-width: 1200px) {
+.welcome {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+.welcome {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.container {
+  height: auto;
+ }
+.myskills {
+    margin-left: 0;
+    margin-right: 0;
+  }
+.skills h2 {
+    font-size: 1.1em !important;
+}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  body {
+    overflow: auto;
+  }
+  .welcome {
+    padding-top: 50px;
+    font-size: 0.7em;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .typing a {
+    font-size: 1em;
+  }
+
+  .myskills {
+    margin-left: 200px;
+    margin-right: 200px;
+    flex-direction: column;
+  }
+  .contact {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  .contact h1 {
+    font-size: 1.8em;
+  }
+
+  .skills h2 {
+    font-size: 1.1em !important;
+  }
+  .container {
+    height: auto;
+  }
+}
+/* landscape mobile phones */
+@media (min-width: 570px) and (max-width: 767px) {
+  body {
+    overflow: auto;
+  }
+  .welcome {
+    font-size: 0.6em;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 25vh;
+  }
+
+  .typing a {
+    font-size: 1em;
+  }
+  .myskills {
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .contact {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .contact h1 {
+    font-size: 1.8em;
+  }
+  input[type=name], input[type=email], input[type=subject] {
+  width: 100%;
+  }
+}
+/* small landscape mobile phones */
+@media (min-width: 415px) and (max-width: 568px) {
+  body {
+    overflow: auto;
+  }
+
+  .welcome {
+    font-size: 0.5em;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 25vh;
+  }
+
+  .typing a {
+    font-size: 1em;
+  }
+  .myskills {
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .contact {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .contact h1 {
+    font-size: 1.8em;
+  }
+  input[type=name], input[type=email], input[type=subject] {
+  width: 100%;
+  }
+}
+
+
+@media (min-width: 375px) and (max-width: 414px) {
+  body {
+    overflow: auto;
+  }
+  .welcome {
+    font-size: 0.6em;
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .typing a {
+    font-size: 1em;
+  }
+  .myskills {
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .contact {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .contact h1 {
+    font-size: 1.8em;
+  }
+  input[type=name], input[type=email], input[type=subject] {
+  width: 100%;
+  }
+}
+
+
+@media (max-width: 320px) {
+  body {
+    overflow: auto;
+  }
+  .welcome {
+    font-size: 0.5em;
+    margin-top: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .typing a {
+    font-size: 1em;
+  }
+  .myskills {
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .contact {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .contact h1 {
+    font-size: 1.5em;
+  }
+  input[type=name], input[type=email], input[type=subject] {
+  width: 100%;
+  }
+}
