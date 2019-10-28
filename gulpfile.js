@@ -5,7 +5,6 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
 const del = require('del');
-const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
@@ -46,7 +45,6 @@ function cssTask(done) {
     src(config.app.scss)
         .pipe(sass({ outputStyle: 'expanded' }))
         .pipe(rename({ suffix: '.bundle' }))
-        .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(dest(config.dist.base))
     done();
 }
@@ -80,7 +78,7 @@ function watchFiles() {
 function liveReload(done) {
     browserSync.init({
         server: {
-            baseDir: config.dist.base
+            index: "index.html"
         },
     });
     done();
