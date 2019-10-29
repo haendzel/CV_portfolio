@@ -12,15 +12,17 @@ const cssnano = require('cssnano');
 const config = {
     app: {
         js: [
-            './src/scripts/**/*.js',
+            './src/js/**/*.js',
         ],
-        scss: './src/style/**/*.scss',
+        scss: './src/sass/**/*.scss',
         fonts: './src/fonts/*',
         images: './src/images/*.*',
         html: './src/*.html'
     },
     dist: {
         base: './dist/',
+        js: './dist/js',
+        css: './dist/css',
         fonts: './dist/fonts',
         images: './dist/images'
     },
@@ -37,7 +39,7 @@ function jsTask(done) {
         }))
         .pipe(concat('main.bundle.js'))
         .pipe(uglify())
-        .pipe(dest(config.dist.base))
+        .pipe(dest(config.dist.js))
     done();
 }
 
@@ -45,7 +47,7 @@ function cssTask(done) {
     src(config.app.scss)
         .pipe(sass({ outputStyle: 'expanded' }))
         .pipe(rename({ suffix: '.bundle' }))
-        .pipe(dest(config.dist.base))
+        .pipe(dest(config.dist.css))
     done();
 }
 
