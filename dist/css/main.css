@@ -1,37 +1,62 @@
 @import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
-
 /* VENDORS */
-@import '/././dist/css/vendors/bootstrap.css';
-
+@import url(/././dist/css/vendors/bootstrap.css);
 /* SECTIONS */
-@import '/././dist/css/sections/skills.css';
-
+@import url(/././dist/css/sections/skills.css);
 /* COMPONENTS */
-@import '/././dist/css/components/form.css';
-@import '/././dist/css/components/menu.css';
-@import '/././dist/css/components/hamburger.css';
-
-
-body { background: #F5F5F5; top: 0; margin: 0; overflow: hidden; }
-
-.container { }
-
-footer { position: fixed; background: #fcfcfc; border-top: #dbdbdb solid 1px; height: 70px; width: 100vw; 
-  bottom: 0; left: 0; text-align: center;}
-
-#hello, 
-#projects,
-#contact, 
-#skills { display: flex; justify-content: center; flex-direction: column; width: 100vw; height: 100vh; left: 0; top: 0; }
-
-#hello {
-  .welcome { width: 850px; height: 400px; }
+@import url(/././dist/css/components/form.css);
+@import url(/././dist/css/components/menu.css);
+@import url(/././dist/css/components/hamburger.css);
+body {
+  background: #F5F5F5;
+  top: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
-#contact { display: block; }
+footer {
+  position: fixed;
+  background: #fcfcfc;
+  border-top: #dbdbdb solid 1px;
+  height: 70px;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
 
-.content { width: 100vw; height: 100vh; left: 0; margin: 0 auto; font-family: 'Roboto', sans-serif; 
-  p {font-size: 20px;}
+#hello,
+#projects,
+#contact,
+#skills {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+
+#hello .welcome {
+  width: 850px;
+  height: 400px;
+}
+
+#contact {
+  display: block;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.content p {
+  font-size: 20px;
 }
 
 a:-webkit-any-link, a:any-link, a:-moz-any-link, a:-ms-any-link {
@@ -41,6 +66,7 @@ a:-webkit-any-link, a:any-link, a:-moz-any-link, a:-ms-any-link {
 a:hover {
   color: #FF5252;
 }
+
 h1 {
   font-size: 1.8em;
   position: relative;
@@ -49,16 +75,19 @@ h1 {
   line-height: 1.8;
   color: #193154;
 }
+
 .overlay ul li {
   height: 20% !important;
 }
-.typing a  {
+
+.typing a {
   color: #FF5252;
   text-decoration: none;
   font-size: 30px;
   overflow: hidden;
   border-bottom: 3px solid currentColor;
 }
+
 .logo {
   border: #193154 solid 2px;
   padding: 15px;
@@ -94,6 +123,7 @@ h1 {
     left: 0;
   }
 }
+
 .fab {
   font-size: 2em;
   margin: 0.5em;
@@ -108,6 +138,7 @@ h1 {
 .fab a:hover {
   cursor: pointer;
 }
+
 .fab a:link, .fab a:-moz-link, fab a:-webkit-link, fab a:-ms-link {
   color: #0a121e;
 }
@@ -119,23 +150,28 @@ h1 {
 li, ul {
   list-style-type: none;
 }
+
 .img-thumbnail {
   cursor: pointer;
 }
-.img-thumbnail{
-  filter: grayscale(100%) ;
+
+.img-thumbnail {
+  filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
 }
-.img-thumbnail:hover{
+
+.img-thumbnail:hover {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
   transition: ease 0.5s;
   opacity: 0.7;
 }
+
 .btn-success {
   background-color: #FF5252;
   border-color: #FF5252;
 }
+
 .info {
   color: #000;
   line-height: 16px;

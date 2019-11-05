@@ -20,9 +20,11 @@
 </head>
 <body>
 
+<div class="container">
+
 <header>
   <div class="logo" style="cursor: pointer;" onclick="window.location='index.html';">handzel.net/cv</div>
-  <div class="button_container" id="toggle">
+  <div class="hamburger" id="toggle">
     <span class="top"></span>
     <span class="bottom"></span>
   </div>
@@ -34,8 +36,9 @@
   </div>
 </section>
 
+
 <section id="projects">
-        <div class="container">
+        <div class="content">
             <div class="row">
 
               <figure class="art col-lg-3 col-md-4 col-xs-6" title="Alek Jozefczyk portfolio" id="open-to-view">
@@ -95,10 +98,10 @@
               </figure>
           </div>
       </div>
-</section>
+</section> 
 
 <section id="skills">
-    <div class="container">
+    <div class="content">
         <div class="myskills" id="myskills" data-hash="myskills">
 
             <div class="skills languages">
@@ -171,13 +174,15 @@
 <div class="overlay" id="overlay">
   <nav class="overlay-menu">
     <ul>
-      <li ><a href="#">Home</a></li>
+      <li ><a href="index.html">Home</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a target="_blank" rel="noopener noreferrer" href="filiphandzel-cv.pdf">CV</a></li>
     </ul>
   </nav>
+</div>
+
 </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>

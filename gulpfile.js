@@ -22,7 +22,7 @@ const config = {
     dist: {
         base: './dist/',
         js: './dist/js',
-        css: './dist/css',
+        css: './dist/css/',
         fonts: './dist/fonts',
         images: './dist/images'
     },
@@ -46,7 +46,6 @@ function jsTask(done) {
 function cssTask(done) {
     src(config.app.scss)
         .pipe(sass({ outputStyle: 'expanded' }))
-        .pipe(rename({ suffix: '.bundle' }))
         .pipe(dest(config.dist.css))
     done();
 }

@@ -1,3 +1,7 @@
+.myskills {
+  display: flex;
+}
+
 .skills {
   width: inherit;
   position: relative;

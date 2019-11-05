@@ -1,0 +1,193 @@
+@media (min-width: 1900px) {
+  .welcome {
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .myskills, .contact {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .welcome {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .welcome {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .container {
+    height: auto;
+  }
+  .myskills {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .skills h2 {
+    font-size: 1.1em !important;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  body {
+    overflow: auto;
+  }
+  .welcome {
+    padding-top: 50px;
+    font-size: 0.7em;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .typing a {
+    font-size: 1em;
+  }
+  .myskills {
+    margin-left: 200px;
+    margin-right: 200px;
+    flex-direction: column;
+  }
+  .contact {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .contact h1 {
+    font-size: 1.8em;
+  }
+  .skills h2 {
+    font-size: 1.1em !important;
+  }
+  .container {
+    height: auto;
+  }
+}
+
+/* landscape mobile phones */
+@media (min-width: 570px) and (max-width: 767px) {
+  body {
+    overflow: auto;
+  }
+  .welcome {
+    font-size: 0.6em;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 25vh;
+  }
+  .typing a {
+    font-size: 1em;
+  }
+  .myskills {
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .contact {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .contact h1 {
+    font-size: 1.8em;
+  }
+  input[type=name], input[type=email], input[type=subject] {
+    width: 100%;
+  }
+}
+
+/* small landscape mobile phones */
+@media (min-width: 415px) and (max-width: 568px) {
+  body {
+    overflow: auto;
+  }
+  .welcome {
+    font-size: 0.5em;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 25vh;
+  }
+  .typing a {
+    font-size: 1em;
+  }
+  .myskills {
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .contact {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .contact h1 {
+    font-size: 1.8em;
+  }
+  input[type=name], input[type=email], input[type=subject] {
+    width: 100%;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 414px) {
+  body {
+    overflow: auto;
+  }
+  .welcome {
+    font-size: 0.6em;
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .typing a {
+    font-size: 1em;
+  }
+  .myskills {
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .contact {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .contact h1 {
+    font-size: 1.8em;
+  }
+  input[type=name], input[type=email], input[type=subject] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    overflow: auto;
+  }
+  .welcome {
+    font-size: 0.5em;
+    margin-top: 120px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .typing a {
+    font-size: 1em;
+  }
+  .myskills {
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .contact {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .contact h1 {
+    font-size: 1.5em;
+  }
+  input[type=name], input[type=email], input[type=subject] {
+    width: 100%;
+  }
+}
