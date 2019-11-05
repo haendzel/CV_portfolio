@@ -13,59 +13,7 @@
 
 .overlay ul, .overlay li {
   height: 20% !important;
-}
-
-.overlay ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  display: inline-block;
-  position: relative;
-  height: 100%;
-}
-
-.overlay ul li {
-  display: block;
-  height: 25%;
-  height: calc(100% / 4);
-  min-height: 50px;
-  position: relative;
-  opacity: 0;
-}
-
-.overlay ul li a {
-  display: block;
-  position: relative;
-  color: #FFF;
-  text-decoration: none;
-  overflow: hidden;
-}
-
-.overlay ul li a:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0%;
-  transform: translateX(-50%);
-  height: 3px;
-  background: #FFF;
-  transition: .35s;
-}
-
-.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
-  width: 100%;
-}
-
-nav {
-  position: relative;
-  height: 70%;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 50px;
-  font-family: 'Vollkorn', serif;
-  font-weight: 400;
-  text-align: center;
+  margin-bottom: 50px;
 }
 
 .open {
@@ -90,4 +38,62 @@ nav {
 
 .open li:nth-of-type(4) {
   animation-delay: .50s;
+}
+
+nav {
+  position: relative;
+  height: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+
+nav ul li {
+  display: block;
+  height: 25%;
+  height: calc(100% / 4);
+  min-height: 50px;
+  position: relative;
+  opacity: 0;
+}
+
+nav ul li a {
+  display: block;
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+nav ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #FFF;
+  transition: .35s;
+}
+
+nav ul li a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+
+nav ul li a:hover:after, nav ul li a:focus:after, nav ul li a:active:after {
+  width: 100%;
 }

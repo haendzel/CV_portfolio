@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
 /* VENDORS */
-@import url(/././dist/css/vendors/bootstrap.css);
 /* SECTIONS */
 @import url(/././dist/css/sections/skills.css);
 /* COMPONENTS */
