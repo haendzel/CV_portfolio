@@ -1,0 +1,28 @@
+#home .welcome {
+  width: 850px;
+  height: 400px;
+}
+
+body {
+  background: #F5F5F5;
+  top: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 1.8em;
+  position: relative;
+  text-align: left;
+  font-family: 'Vollkorn', serif;
+  line-height: 1.8;
+  color: #193154;
+}
+
+.typing a {
+  color: #FF5252;
+  text-decoration: none;
+  font-size: 30px;
+  overflow: hidden;
+  border-bottom: 3px solid currentColor;
+}

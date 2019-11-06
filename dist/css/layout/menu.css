@@ -97,3 +97,7 @@ nav ul li a:hover {
 nav ul li a:hover:after, nav ul li a:focus:after, nav ul li a:active:after {
   width: 100%;
 }
+
+li, ul {
+  list-style-type: none;
+}
