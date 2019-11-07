@@ -4,7 +4,10 @@
   "description": "Junior front-end portfolio website",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp dev",
+    "watch": "gulp watch",
+    "prod": "gulp build",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -21,11 +24,15 @@
     "@babel/preset-env": "^7.6.3",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
+    "eslint": "^6.6.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-babili": "^0.1.4",
     "gulp-cache": "^1.1.3",
     "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-imagemin": "^6.1.1",
+    "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
@@ -36,11 +43,5 @@
   },
   "dependencies": {
     "gulp-cssnano": "^2.1.3"
-  },
-  "scripts": {
-    "start": "gulp dev",
-    "watch": "gulp watch",
-    "prod": "gulp build",
-    "build": "gulp build"
   }
 }

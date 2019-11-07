@@ -5,6 +5,7 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
 const del = require('del');
+const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
@@ -37,7 +38,7 @@ function jsTask(done) {
         .pipe(babel({
             presets: ['@babel/preset-env']
         }))
-        .pipe(concat('main.bundle.js'))
+        .pipe(concat('main.js'))
         .pipe(uglify())
         .pipe(dest(config.dist.js))
     done();
@@ -46,6 +47,7 @@ function jsTask(done) {
 function cssTask(done) {
     src(config.app.scss)
         .pipe(sass({ outputStyle: 'expanded' }))
+        .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(dest(config.dist.css))
     done();
 }
@@ -79,7 +81,7 @@ function watchFiles() {
 function liveReload(done) {
     browserSync.init({
         server: {
-            index: "index.html"
+            baseDir: config.dist.base
         },
     });
     done();

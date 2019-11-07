@@ -1,27 +1,32 @@
 /* UTILITIES */
-@import '/././dist/css/utilities/animation.css';
+@import 
+    'utilities/animation';
 
 /* BASE */
-@import '/././dist/css/base/typography.css';
+@import 
+    'base/typography';
 
 /* COMPONENTS */
-@import '/././dist/css/components/form.css';
-@import '/././dist/css/components/hamburger.css';
-@import '/././dist/css/components/fab.css';
-@import '/././dist/css/components/img-thumbnail.css';
-@import '/././dist/css/components/logo.css';
+@import 
+    'components/form',
+    'components/hamburger',
+    'components/fab',
+    'components/img-thumbnail',
+    'components/logo';
 
 /* LAYOUT */
-@import '/././dist/css/layout/menu.css';
-@import '/././dist/css/layout/footer.css';
-@import '/././dist/css/layout/content.css';
-@import '/././dist/css/layout/grid.css';
+@import 
+    'layout/menu',
+    'layout/footer',
+    'layout/content',
+    'layout/grid';
 
 /* SECTIONS */
-@import '/././dist/css/sections/home.css';
-@import '/././dist/css/sections/projects.css';
-@import '/././dist/css/sections/skills.css';
-@import '/././dist/css/sections/contact.css';
+@import 
+    'sections/home',
+    'sections/projects',
+    'sections/skills',
+    'sections/contact';
 
 /* VENDORS */
-@import '/././dist/css/vendors/glightbox.css';
+//nothing

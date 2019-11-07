@@ -1,11 +1,1 @@
-.content {
-  width: 100vw;
-  height: 100vh;
-  left: 0;
-  margin: 0 auto;
-  font-family: 'Roboto', sans-serif;
-}
-
-.content p {
-  font-size: 20px;
-}
+.content{height:100vh;left:0;padding:100px;font-family:Roboto,sans-serif}.content p{font-size:20px}
