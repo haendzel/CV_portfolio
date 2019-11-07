@@ -4,7 +4,10 @@
   "description": "Junior front-end portfolio website",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp dev",
+    "watch": "gulp watch",
+    "prod": "gulp build",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -17,8 +20,8 @@
   },
   "homepage": "https://github.com/haendzel/front-end-portfolio#readme",
   "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
+    "@babel/core": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
@@ -36,11 +39,5 @@
   },
   "dependencies": {
     "gulp-cssnano": "^2.1.3"
-  },
-  "scripts": {
-    "start": "gulp dev",
-    "watch": "gulp watch",
-    "prod": "gulp build",
-    "build": "gulp build"
   }
 }

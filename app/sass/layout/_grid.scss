@@ -1,0 +1,27 @@
+.container
+  padding-left: 200px
+  padding-right: 200px
+
+.wrapper
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+
+.wrapper > *
+  flex: 1 100%
+
+#home,
+#projects,
+#contact,
+#skills
+  display: flex
+  justify-content: center
+  flex-direction: column
+  width: 100vw
+  height: 100vh
+  left: 0
+  top: 0
+
+a
+  &:any-link
+    color: #0a121e
