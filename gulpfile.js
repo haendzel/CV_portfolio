@@ -23,6 +23,7 @@ const config = {
         base: './dist/',
         js: './dist/js',
         css: './dist/css/',
+        fonts: './dist/fonts',
         images: './dist/images'
     },
     extraBundles: [
@@ -36,9 +37,9 @@ function jsTask(done) {
         .pipe(babel({
             presets: ['@babel/preset-env']
         }))
-        .pipe(concat('main.js'))
+        .pipe(concat('main.bundle.js'))
         .pipe(uglify())
-        .pipe(dest(config.dist.base))
+        .pipe(dest(config.dist.js))
     done();
 }
 
@@ -78,7 +79,7 @@ function watchFiles() {
 function liveReload(done) {
     browserSync.init({
         server: {
-            baseDir: config.dist.base
+            index: "index.html"
         },
     });
     done();
