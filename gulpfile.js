@@ -9,6 +9,7 @@ const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
+//const useref = require('useref');
 
 const config = {
     app: {
@@ -38,7 +39,7 @@ function jsTask(done) {
         .pipe(babel({
             presets: ['@babel/preset-env']
         }))
-        .pipe(concat('main.js'))
+        .pipe(concat('main.min.js'))
         .pipe(uglify())
         .pipe(dest(config.dist.js))
     done();
@@ -47,6 +48,7 @@ function jsTask(done) {
 function cssTask(done) {
     src(config.app.scss)
         .pipe(sass({ outputStyle: 'expanded' }))
+        .pipe(rename({ suffix: '.min' }))
         .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(dest(config.dist.css))
     done();
