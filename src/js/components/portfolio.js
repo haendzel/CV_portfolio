@@ -59,15 +59,14 @@ const portfolioData  = [
 
 function portfolioTemplate(portfolio) {
     return `
-      <div class="animal">
-      <img class="pet-photo" src="${portfolio.thumbs}">
-      <h2 class="pet-name">${portfolio.title} <span class="species">(${portfolio.desc})</span></h2>
+      <div class="project">
+      <img class="project-thumb" src="${portfolio.thumb}">
       </div>
     `;
   }
   
   document.getElementById("portfolio").innerHTML = `
-    <h1 class="app-title">Portfolio (${portfolioData.length} results)</h1>
     ${portfolioData.map(portfolioTemplate).join("")}
-    <p class="footer">These ${portfolioData.length} pets were added recently. Check back soon for updates.</p>
   `;
+
+ // <h2 class="project-title">${portfolio.title}</h2><div class="project-desc">${portfolio.desc}</div> 

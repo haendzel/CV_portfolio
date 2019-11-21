@@ -1,4 +1,12 @@
 #projects {
-    .content { display: flex; flex-direction: row; flex-wrap: wrap; overflow: auto; }
+    .content { overflow: scroll; max-height: auto; }
     figure { flex-basis: auto; }
 }
+
+.project { 
+    &-thumb { width: 29rem; height: 29rem; margin-right: .8rem; margin-bottom: .8rem; }
+    &-title { font-size: $standard-fontsize; }
+    &-desc { font-size: $small-fontsize; }
+}
+
+#portfolio { display: flex; flex-direction: row; flex-wrap: wrap; }

@@ -1,6 +1,7 @@
-#contact { display: block; 
-    .content {
-        p { font-size: $standard-fontsize;}
+#contact { 
+    .content { 
+        span { font-size: $standard-fontsize;}
         a { color: $primary-color;}
+        form { }
     }
 }
