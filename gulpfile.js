@@ -9,7 +9,7 @@ const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
-//const useref = require('useref');
+const pixrem = require('gulp-pixrem');
 
 const config = {
     app: {
@@ -48,6 +48,10 @@ function jsTask(done) {
 function cssTask(done) {
     src(config.app.scss)
         .pipe(sass({ outputStyle: 'expanded' }))
+        .pipe(pixrem({
+            rootValue: '10px',
+            replace: true
+          }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(postcss([autoprefixer(), cssnano()]))
         .pipe(dest(config.dist.css))
