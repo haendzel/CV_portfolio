@@ -4,9 +4,11 @@
 }
 
 .project { 
-    &-thumb { width: 29rem; height: 29rem; margin-right: .8rem; margin-bottom: .8rem; }
+    &-thumb { width: 27rem; height: 25rem; filter: grayscale(100%); margin-bottom: 3rem;
+        &:hover { opacity: .6; transition: ease .5s; filter: grayscale(0%); }
+    }
     &-title { font-size: $standard-fontsize; }
     &-desc { font-size: $small-fontsize; }
 }
 
-#portfolio { display: flex; flex-direction: row; flex-wrap: wrap; }
+#portfolio { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; }
