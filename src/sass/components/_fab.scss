@@ -1,4 +1,4 @@
-.fab { font-size: 2em; margin: 0.5em; text-decoration: none; color: #0a121e; 
+.fab { font-size: 2rem; margin: 0.5rem; text-decoration: none; color: #0a121e; 
   a { color: #0a121e; 
     &:hover { cursor: pointer; }
     &:link, &:visited { color: #0a121e; }
@@ -6,5 +6,5 @@
 }
 
 a { 
-    &:hover { color: #FF5252; } 
+    &:hover { color: $primary-color; } 
 }

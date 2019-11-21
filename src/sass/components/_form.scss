@@ -1,9 +1,9 @@
-input[type=name], input[type=email], input[type=subject], input[type=text], input[type=submit], textarea { width: 50%; padding: 12px; border: 1px solid #ccc;
-    box-sizing: border-box; margin-top: 6px; margin-bottom: 16px; }
-input[type=text], textarea { min-height: 80px; max-height: 100px; resize: vertical; }
-input[type=submit] { background-color: #FF5252; color: white; padding: 12px 20px; border: none; cursor: pointer; }
-input[type=submit]:hover { background-color: #FF5252; }
+input[type=name], input[type=email], input[type=subject], input[type=text], input[type=submit], textarea { width: 50%; padding: 1.2rem; border: 1px solid #ccc;
+    box-sizing: border-box; margin-top: 0.6rem; margin-bottom: 1.6rem; }
+input[type=text], textarea { min-height: 8rem; max-height: 10rem; resize: vertical; }
+input[type=submit] { background-color: $primary-color; color: white; padding: 1.2rem 2rem; border: none; cursor: pointer; }
+input[type=submit]:hover { background-color: $primary-color; }
   
-p.statusMsg{ font-size: 18px; }
+p.statusMsg{ font-size: 1.8rem; }
 p.succdiv{ color:#008000; }
 p.errordiv{ color:#E80000; }

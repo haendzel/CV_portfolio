@@ -16,7 +16,7 @@
     padding-bottom: 50px;
     font-size: 1.3em;
     font-family: 'Vollkorn', serif;
-    color: #193154;
+    color: $secondary-color;
   }
   .skills ul {
     padding-left: 10px;
@@ -24,7 +24,7 @@
   }
   .skills ul > li {
     margin-bottom: 40px;
-    background: #193154;
+    background: $secondary-color;
     height: 6px;
     list-style-type: none;
   }
@@ -36,7 +36,7 @@
   }
   .skills ul > li span {
     height: inherit;
-    background-color: #FF5252;
+    background-color: $primary-color;
     position: absolute;
   }
   .skills .html {
