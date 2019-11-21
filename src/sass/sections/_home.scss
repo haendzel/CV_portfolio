@@ -7,5 +7,5 @@ body { background: $gray-color; top: 0; margin: 0; overflow: hidden; }
 h1 { font-size: 1.8em; position: relative; text-align: left; font-family: 'Vollkorn', serif; line-height: 1.8; color: $secondary-color; }
 
 .typing {
-    a  { color: $primary-color; text-decoration: none; font-size: $large-fontsize; overflow: hidden; border-bottom: .3rem solid currentColor; }
+    a  { color: $primary-color; text-decoration: none; font-size: $large-fontsize; overflow: hidden; }
 }
