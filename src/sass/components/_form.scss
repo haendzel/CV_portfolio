@@ -1,4 +1,4 @@
-input[type=name], input[type=email], input[type=subject], input[type=text], input[type=submit], textarea { width: 50%; padding: 1.2rem; border: 1px solid #ccc;
+input[type=name], input[type=email], input[type=subject], input[type=text], input[type=submit], textarea { width: 100%; padding: 1.2rem; border: 1px solid #ccc;
     box-sizing: border-box; margin-top: 0.6rem; margin-bottom: 1.6rem; }
 input[type=text], textarea { min-height: 8rem; max-height: 10rem; resize: vertical; }
 input[type=submit] { background-color: $primary-color; color: white; padding: 1.2rem 2rem; border: none; cursor: pointer; }

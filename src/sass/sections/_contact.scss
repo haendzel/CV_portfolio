@@ -1,6 +1,8 @@
 #contact { 
-    .content { 
-        span { font-size: $standard-fontsize;}
+    .content { display: flex; align-items: center; flex-direction: column;
+        span { font-size: $standard-fontsize; color: $black-color;
+            &:last-of-type { margin-bottom: 2rem; }
+        }
         a { color: $primary-color;}
         form { }
     }
