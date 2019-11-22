@@ -1,35 +1,35 @@
 const portfolioData  = [
 {
     title: "Insidelab",
-    desc: "Development in Owls Department company. Insidelab specializing in designs, realizations and modernizations of commercial, office, shop and restaurant spaces.<a target='_blank'rel='noopener noreferrer' href='http://insidelab.pl>insidelab.pl</a>",
+    desc: "Development in Owls Department company. Insidelab specializing in designs, realizations and modernizations of commercial, office, shop and restaurant spaces.",
     tech: "HTML5, Sass, CSS3, Wordpress, Javascript, jQuery, PHP, AJAX, JSON, Gulp",
     photo: "images/pasha.png",
     thumb:"images/thumb1.png"
 },
 {
-    title: "Report 2018 for Polsat Group",
-    desc: "Development in Owls Department company. I developed tables and diagrams for this public report.<a target='_blank'rel='noopener noreferrer' href='https://raportniefinansowy2018.grupapolsat.pl>raportniefinansowy2018.grupapolsat.pl</a>",
+    title: "Report 2018 for Polsat Group.",
+    desc: "Development in Owls Department company. I developed tables and diagrams for this public report.",
     tech: "HTML5, Sass, CSS3, Wordpress, Javascript, jQuery, PHP, AJAX, JSON, Gulp",
     photo: "images/pasha.png",
     thumb: "images/thumb2.png"
 },
 {
     title: "Alek Jozefczyk",
-    desc: "Portfolio for polish artist and director <a target='_blank' rel='noopener noreferrer' href='http://alekjozefczyk.pl'>alekjozefczyk.pl</a>",
+    desc: "Portfolio for polish artist and director.",
     tech: "HTML5, CSS3, Javascript, jQuery, Bootstrap",
     photo: "images/alek.png",
     thumb: "images/thumb3.png"
 },
 {
     title: "Front-end portfolio",
-    desc: "My simple website portfolio <a target='_blank' rel='noopener noreferrer' href='http://handzel.net/cv'>handzel.net/cv</a>'",
+    desc: "My simple website portfolio.",
     tech: "HTML5, Sass, CSS3, Javascript, jQuery, JSON, Gulp",
     photo: "images/pasha.png",
     thumb: "images/thumb4.png"
 },
 {
     title: "First developed website in my life",
-    desc: "Retro design website for Front-end Family small company <a target='_blank'rel='noopener noreferrer' href='http://front-end.family'>front-end.family</a>",
+    desc: "Retro design website for Front-end Family small company.",
     tech: "HTML5, CSS3, Javascript",
     photo: "images/pasha.png",
     thumb: "images/thumb5.png"
@@ -59,14 +59,27 @@ const portfolioData  = [
 
 function portfolioTemplate(portfolio) {
     return `
-      <div class="project">
-      <img class="project-thumb" src="${portfolio.thumb}">
-      </div>
-    `;
+    <div class="project">
+        <a class="btn" href="#open-modal"><img class="project-thumb" src="${portfolio.thumb}"></a>
+    </div>`;
   }
-  
-  document.getElementById("portfolio").innerHTML = `
-    ${portfolioData.map(portfolioTemplate).join("")}
-  `;
 
-  //<div class="modal" id="modal"><h2 class="project-title">${portfolio.title}</h2><div class="project-desc">${portfolio.desc}</div> </div>
+function portfolioModal(portfolio) {
+    return `
+    <div id="open-modal" class="modal-window">
+          <div>
+            <a href="#projects" title="Close" class="modal-close">Close</a>
+            <h1 class="project-title">${portfolio.title}</h1>
+            <div class="project-desc">${portfolio.desc}</div>
+            <img class="project-photo" src="${portfolio.photo}">
+        </div>
+    </div>`;
+}
+
+document.getElementById("portfolio").innerHTML = `
+${portfolioData.map(portfolioTemplate).join("")}
+  `;
+  
+document.getElementById("content-modal").innerHTML = `
+${portfolioData.map(portfolioModal).join("")}
+`;
