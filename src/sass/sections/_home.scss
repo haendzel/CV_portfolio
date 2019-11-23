@@ -1,11 +1,17 @@
 #home {
-    .content { padding: 20rem !important; vertical-align: middle; }
-  }
-  
-body { background: $gray_color; top: 0; margin: 0; overflow: hidden; }
 
-h1 { font-size: 1.8em; position: relative; text-align: left; font-family: 'Vollkorn', serif; line-height: 1.8; color: $secondary_color; }
+h1 { position: relative; text-align: left; font-family: 'Vollkorn', serif; line-height: 1.8; color: $secondary_color;
+  @include bp(phablet) { line-height: 1.3; }
+}
+
+.content {
+  margin-top: 10rem;
+  @include bp(phablet) { margin-top: 10rem; }
+}
 
 .typing {
-    a  { color: $primary_color; text-decoration: none; font-size: $large_fontsize; overflow: hidden; }
+    a  { color: $primary_color; text-decoration: none; font-size: $large_fontsize; overflow: hidden; 
+      @include bp(phablet) { font-size: $small_fontsize; }
+    }
+  }
 }

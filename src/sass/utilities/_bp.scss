@@ -148,8 +148,6 @@ For examples, look at the bottom of this file.
 /*
 Examples:
 
-header {
-
 // Excludes tablet and phablet
 // @include bp($from: desktop, $to: mobile-s, $exclude: tablet phablet) { background: tomato; }
 
@@ -187,5 +185,4 @@ header {
 // - custom/wrong value for $only
 // @include bp($only: janusz) { background-color: tomato;}
 
-}
 */

@@ -1,3 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
 
-$font-stack: 'Roboto', sans-serif; 
+$font_primary: 'Roboto', sans-serif; 
+$font_secondary: 'Vollkorn' , serif;
+
+h1 { font-size: $large_fontsize;  font-family: $font-secondary; 
+    @include bp(phablet) { font-size: $small_fontsize; }
+}

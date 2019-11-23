@@ -13,6 +13,7 @@
 
 nav { position: relative; height: 70%; top: 50%; transform: translateY(-50%); font-size: 50px; font-family: 'Vollkorn', serif;
     font-weight: 400; text-align: center; 
+    @include bp(phablet) { height: 80%; }
     ul { list-style: none; padding: 0; margin: 0 auto; display: inline-block; position: relative; height: 100%; 
         li { display: block; height: 25%; height: calc(100% / 4); min-height: 50px; position: relative; opacity: 0;
             a { display: block; position: relative; color: #FFF; text-decoration: none; overflow: hidden;

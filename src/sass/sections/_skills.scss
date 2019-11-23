@@ -1,4 +1,10 @@
-.myskills { display: flex; }
+#skills {
+  .content { overflow: auto; }
+}
+
+.myskills { display: flex;
+  @include bp(phablet) { flex-direction: column; }
+}
 
 .skills { width: inherit; position: relative; float: left; flex: 1 0 calc(33.333% - 20px); 
   h2 { padding-bottom: 50px; font-size: 1.3em; font-family: 'Vollkorn', serif; color: $secondary_color; }
