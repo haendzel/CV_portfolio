@@ -3,6 +3,6 @@
 $font_primary: 'Roboto', sans-serif; 
 $font_secondary: 'Vollkorn' , serif;
 
-h1 { font-size: $large_fontsize;  font-family: $font-secondary; 
+h1 { font-size: $large_fontsize;  font-family: $font-secondary; color: $secondary_color;
     @include bp(phablet) { font-size: $small_fontsize; }
 }
