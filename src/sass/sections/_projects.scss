@@ -7,8 +7,8 @@
     &-thumb { width: 27rem; height: 25rem; filter: grayscale(100%); margin-bottom: 3rem;  
         &:hover { opacity: .7; transition: ease .5s; filter: grayscale(0%); }
     }
-    &-title { font-size: $standard-fontsize; }
-    &-desc { font-size: $small-fontsize; margin-bottom: 2rem; }
+    &-title { font-size: $standard_fontsize; }
+    &-desc { font-size: $small_fontsize; margin-bottom: 2rem; }
 }
 
 #portfolio { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; }

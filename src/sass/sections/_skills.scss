@@ -1,7 +1,7 @@
 .myskills { display: flex; }
 
 .skills { width: inherit; position: relative; float: left; flex: 1 0 calc(33.333% - 20px); 
-  h2 { padding-bottom: 50px; font-size: 1.3em; font-family: 'Vollkorn', serif; color: $secondary-color; }
+  h2 { padding-bottom: 50px; font-size: 1.3em; font-family: 'Vollkorn', serif; color: $secondary_color; }
   ul { padding-left: 10px; padding-right: 10px;}
 }
   .soft, .languages, .programs {
@@ -9,9 +9,9 @@
     margin: 10px;
   }
 
-  .skills ul > li { margin-bottom: 40px; background: $secondary-color; height: 6px; list-style-type: none; }
+  .skills ul > li { margin-bottom: 40px; background: $secondary_color; height: 6px; list-style-type: none; }
   .skills ul > li em { font-size: 14px; position: relative; top: -30px; opacity: 0.7; }
-  .skills ul > li span { height: inherit; background-color: $primary-color; position: absolute; }
+  .skills ul > li span { height: inherit; background-color: $primary_color; position: absolute; }
 
   .skills {
     .html { width: 80%; animation: html 2s ease-out; }

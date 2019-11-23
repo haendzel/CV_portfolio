@@ -1,11 +1,12 @@
 /* UTILITIES */
 @import 
-    'utilities/animation';
+    'utilities/animation',
+    'utilities/variables',
+    'utilities/bp';
 
 /* BASE */
 @import 
-    'base/typography',
-    'base/variables';
+    'base/typography';
 
 /* COMPONENTS */
 @import 

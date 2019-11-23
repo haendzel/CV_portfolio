@@ -1,10 +1,10 @@
-.fab { font-size: 3rem; margin: 2rem; text-decoration: none; color: $black-color; 
-  a { color: $black-color; 
+.fab { font-size: 3rem; margin: 2rem; text-decoration: none; color: $black_color; 
+  a { color: $black_color; 
     &:hover { cursor: pointer; }
-    &:link, &:visited { color: $black-color; }
+    &:link, &:visited { color: $black_color; }
     }
 }
 
 a { 
-    &:hover { color: $primary-color; } 
+    &:hover { color: $primary_color; } 
 }

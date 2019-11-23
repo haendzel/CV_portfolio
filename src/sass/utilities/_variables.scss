@@ -1,0 +1,36 @@
+//COLORS
+$primary_color: #FF5252;
+$primary_color_opacity: rgba(25, 49, 84, .5);
+$secondary_color: #193154;
+$gray_color: #f5f5f5;
+$dark_gray_color: #b3b3b3;
+$light_color: #fcfcfc;
+$black_color: #0a121e;
+
+//SIZES
+$xsmall_fontsize: 1.1rem;
+$small_fontsize: 1.3rem;
+$standard_fontsize: 1.6rem;
+$normal_fontsize: 2rem;
+$large_fontsize: 3rem;
+$xlarge_fontsize: 4.5rem;
+
+//Z-INDEX
+$light_z-index: 1;
+$normal_z-index: 100;
+$super_z-index: 1000;
+
+//BREAKPOINTS
+$breakpoints : (
+    mobile-s : 320,
+    mobile : 375,
+    mobile-l : 425,
+    phablet : 520,
+    portrait : 768,
+    tablet : 1024,
+    laptop-s : 1280,
+    laptop : 1366,
+    laptop-l: 1440,
+    desktop: 1680,
+    hd: 1920
+);
