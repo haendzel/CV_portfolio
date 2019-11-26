@@ -1,9 +1,0 @@
-#contact { 
-    .content { display: flex; align-items: center; flex-direction: column; overflow: auto;
-        span { font-size: $standard_fontsize; color: $black_color;
-            &:last-of-type { margin-bottom: 2rem; }
-        }
-        a { color: $primary_color;}
-        form { }
-    }
-}

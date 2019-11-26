@@ -1,6 +1,0 @@
-footer { position: fixed; background: $light_color; border-top: #dbdbdb solid 1px; height: 7rem; width: 100vw; 
-    bottom: 0; left: 0; text-align: center;
-    span { position: absolute; bottom: 1rem; right: 1rem; font-size: $xsmall_fontsize; color: $dark_gray_color; 
-        @include bp(phablet){ display: none; }
-    }
-}
